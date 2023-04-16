@@ -40,4 +40,3 @@ python sqlmap.py -hh
 ----
 * 使用手册: https://github.com/sqlmapproject/sqlmap/wiki
 * 常见问题 (FAQ): https://github.com/sqlmapproject/sqlmap/wiki/FAQ
-* 截图: https://github.com/sqlmapproject/sqlmap/wiki/Screenshots
