@@ -15,6 +15,9 @@ sqlmap 是一种开源渗透测试工具，可自动检测和利用 SQL 注入�
 ----
 您可以在该仓库中的Releases下载最新的压缩包
 
+你也可以点击 [这里](https://github.com/BugFor-Pings/CN_Sqlmap/releases/download/V1.7.1.1/sqlmap_CN.zip)下载最新的汉化版sqlmap
+
+
 sqlmap在任何平台上都可以与Python版本2.6，2.7和3.x开箱即用。
 
 
@@ -30,3 +33,8 @@ python sqlmap.py -hh
 ```
 可以在此处找到示例运行。要获得 sqlmap 功能的概述、支持的功能列表、所有选项和开关的说明以及示例，建议您查阅用户手册。
 
+链接
+----
+* 使用手册: https://github.com/sqlmapproject/sqlmap/wiki
+* 常见问题 (FAQ): https://github.com/sqlmapproject/sqlmap/wiki/FAQ
+* 截图: https://github.com/sqlmapproject/sqlmap/wiki/Screenshots
