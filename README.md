@@ -20,6 +20,9 @@ sqlmap 是一种开源渗透测试工具，可自动检测和利用 SQL 注入�
 
 sqlmap在任何平台上都可以与Python版本2.6，2.7和3.x开箱即用。
 
+如果你连sqlmap相关命令都记不清的话，可以前往另外一个项目下载Gui图形化界面的sqlmap版本
+
+点击 [这里](https://github.com/BugFor-Pings/Sqlmap_Gui/archive/refs/heads/main.zip)下载GUI图形化界面的Sqlmap
 
 用法
 ----
