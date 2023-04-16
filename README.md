@@ -9,7 +9,7 @@ sqlmap 是一种开源渗透测试工具，可自动检测和利用 SQL 注入�
 
 实际运行截图：
 ![Screenshot](https://blog.hackersafe.cn/usr/uploads/2023/04/2584965377.jpg)
-
+![Screenshot](https://blog.hackersafe.cn/usr/uploads/2023/04/1893377604.png)
 
 安装
 ----
