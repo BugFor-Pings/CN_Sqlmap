@@ -1,6 +1,6 @@
 # CN_Sqlmap
 sqlmap 是一种开源渗透测试工具，可自动检测和利用 SQL 注入缺陷并接管数据库服务器。它配备了强大的检测引擎、终极渗透测试仪的许多利基功能，以及广泛的开关，包括数据库指纹识别、从数据库获取数据、访问底层文件系统以及通过带外连接在操作系统上执行命令。
-
+The Chinese version of sqlmap is very friendly to friends who are not good at English. This project comes from sqlmap Chinese, support Python3 and the whole system, v2 details have also been Chinese, full open source without any backdoor
 截图
 ----
 ![Screenshot](https://blog.hackersafe.cn/usr/uploads/2023/04/2008154009.png)
