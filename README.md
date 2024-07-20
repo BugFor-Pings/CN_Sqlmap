@@ -46,3 +46,6 @@ python sqlmap.py -hh
 免责声明
 ----
 由于传播、利用此文所提供的信息而造成的任何直接或者间接的后果及损失，均由使用者本人负责，作者不为此承担任何责任。
+
+
+[![Star History Chart](https://api.star-history.com/svg?repos=BugFor-Pings/CN_Sqlmap&type=Date)](https://star-history.com/#BugFor-Pings/CN_Sqlmap&Date)
