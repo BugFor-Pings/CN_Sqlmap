@@ -1,47 +1,50 @@
-# CN_Sqlmap
-sqlmap 是一种开源渗透测试工具，可自动检测和利用 SQL 注入缺陷并接管数据库服务器。它配备了强大的检测引擎、终极渗透测试仪的许多利基功能，以及广泛的开关，包括数据库指纹识别、从数据库获取数据、访问底层文件系统以及通过带外连接在操作系统上执行命令。
+# sqlmap 1.9 汉化版说明
 
-The Chinese version of sqlmap is very friendly to friends who are not good at English. This project comes from sqlmap Chinese, support Python3 and the whole system, v2 details have also been Chinese, full open source without any backdoor
+## 汉化内容
 
-截图
-----
-![Screenshot](https://blog.hackersafe.cn/usr/uploads/2023/04/2008154009.png)
-![Screenshot](https://blog.hackersafe.cn/usr/uploads/2023/04/3557448478.png)
-![Screenshot](https://blog.hackersafe.cn/usr/uploads/2023/04/2487631865.png)
+本汉化版基于sqlmap 1.9版本，主要对以下内容进行了汉化：
 
-实际运行截图：
-![Screenshot](https://blog.hackersafe.cn/usr/uploads/2023/04/2584965377.jpg)
-![Screenshot](https://blog.hackersafe.cn/usr/uploads/2023/04/1893377604.png)
+1. 主要错误信息和提示消息
+2. 程序横幅和描述
+3. 添加了汉化标识和版本信息
+4. 提供了中文README文件
 
-安装
-----
-您可以在该仓库中的Releases下载最新的压缩包
+## 汉化文件
 
-你也可以点击 [这里](https://github.com/BugFor-Pings/CN_Sqlmap/releases/download/V1.7.1.1/sqlmap_CN.zip)下载最新的汉化版sqlmap
+主要汉化的文件包括：
 
+1. `lib/core/settings.py` - 修改了程序描述和横幅
+2. `lib/core/common.py` - 汉化了常见错误信息
+3. `sqlmap.py` - 汉化了主程序中的错误提示
+4. 新增了 `README-zh-CN-PINGS.md` 中文说明文件
 
-sqlmap在任何平台上都可以与Python版本2.6，2.7和3.x开箱即用。（目前只测试了python3，未测试python2）
+## 注意事项
 
-如果你连sqlmap相关命令都记不清的话，可以前往另外一个项目下载Gui图形化界面的sqlmap版本
+- 本汉化版保留了原始的功能和逻辑，只是更改了界面显示语言
+- 所有原始开发者和版权信息保持不变
+- 如遇到问题，请参考原始的英文错误信息或查阅官方文档
+- 汉化内容仅限于用户界面，不影响程序功能
 
-点击 [这里](https://github.com/BugFor-Pings/Sqlmap_Gui/archive/refs/heads/main.zip)下载GUI图形化界面的Sqlmap
+## 版权信息
 
-用法
-----
-要获取基本选项和开关的列表，请使用：
+本汉化版仍受原始sqlmap的GPL-2.0许可证约束，作者保留原始版权声明。汉化工作不对原始软件做任何功能性修改。
+
+## 使用方法
+
+与原版sqlmap使用方法相同：
+
 ```
-python sqlmap.py -h
+python sqlmap.py -h    # 显示基本帮助
+python sqlmap.py -hh   # 显示完整帮助
 ```
-要获取所有选项和开关的列表，请使用：
-```
-python sqlmap.py -hh
-```
-可以在此处找到示例运行。要获得 sqlmap 功能的概述、支持的功能列表、所有选项和开关的说明以及示例，建议您查阅用户手册。
 
-链接
-----
-* 使用手册: https://github.com/sqlmapproject/sqlmap/wiki
-* 常见问题 (FAQ): https://github.com/sqlmapproject/sqlmap/wiki/FAQ
+## 下载和更新
+
+建议定期从官方仓库更新sqlmap，本汉化版只是为了方便中文用户使用，不会持续维护所有版本的汉化。
+
+## 联系方式
+
+如有问题或建议，请直接联系原始sqlmap团队或提交issue至官方仓库：https://github.com/sqlmapproject/sqlmap/issues 
 
 免责声明
 ----
