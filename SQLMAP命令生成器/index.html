@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQLMap命令生成工具</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1 class="title">SQLMap命令生成工具</h1>
+    </header>
+
+    <div class="grid">
+        <div class="card">
+            <h2>目标选项</h2>
+            <div class="form-group">
+                <label for="url">目标 URL:</label>
+                <input type="text" id="url" placeholder="http://example.com/vuln.php?id=1">
+            </div>
+            <div class="form-group">
+                <label for="direct">直接数据库连接:</label>
+                <input type="text" id="direct" placeholder="connection_string">
+            </div>
+            <div class="form-group">
+                <label for="logfile">日志文件:</label>
+                <input type="text" id="logfile" placeholder="logfile.log">
+            </div>
+            <div class="form-group">
+                <label for="bulkfile">批量文件:</label>
+                <input type="text" id="bulkfile" placeholder="targets.txt">
+            </div>
+            <div class="form-group">
+                <label for="requestfile">HTTP请求文件:</label>
+                <input type="text" id="requestfile" placeholder="request.txt">
+            </div>
+            <div class="form-group">
+                <label for="googledork">Google Dork:</label>
+                <input type="text" id="googledork" placeholder='inurl:".php?id=1"'>
+            </div>
+            <div class="form-group">
+                <label for="configfile">配置文件:</label>
+                <input type="text" id="configfile" placeholder="config.ini">
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>请求选项</h2>
+            <div class="form-group">
+                <label for="data">POST 数据:</label>
+                <input type="text" id="data" placeholder="id=1&user=admin">
+            </div>
+            <div class="form-group">
+                <label for="cookie">Cookie:</label>
+                <input type="text" id="cookie" placeholder="PHPSESSID=abc123">
+            </div>
+            <div class="form-group">
+                <label for="agent">HTTP用户代理:</label>
+                <input type="text" id="agent" placeholder="User-Agent">
+            </div>
+            <div class="form-group">
+                <label for="headers">额外头部:</label>
+                <input type="text" id="headers" placeholder='例如: "X-Forwarded-For: 127.0.0.1"'>
+            </div>
+            <div class="form-group">
+                <label for="method">HTTP方法:</label>
+                <input type="text" id="method" placeholder="例如: PUT">
+            </div>
+            <div class="form-group">
+                <label for="timeout">超时(秒):</label>
+                <input type="number" id="timeout" min="1" value="30">
+            </div>
+            <div class="form-group">
+                <label for="delay">请求之间延迟(秒):</label>
+                <input type="number" id="delay" min="0" value="0">
+            </div>
+            <div class="form-group">
+                <label for="retries">连接重试次数:</label>
+                <input type="number" id="retries" min="1" value="3">
+            </div>
+            <div class="form-group">
+                <label for="proxy">代理:</label>
+                <input type="text" id="proxy" placeholder="http://127.0.0.1:8080">
+            </div>
+            <div class="form-group">
+                <label for="proxy-cred">代理认证:</label>
+                <input type="text" id="proxy-cred" placeholder="username:password">
+            </div>
+            <div class="form-group">
+                <label for="auth-cred">HTTP认证凭据:</label>
+                <input type="text" id="auth-cred" placeholder="username:password">
+            </div>
+            <div class="form-group">
+                <label for="safe-url">安全URL:</label>
+                <input type="text" id="safe-url" placeholder="http://example.com/safe">
+            </div>
+            <div class="form-group">
+                <label for="safe-post">安全POST数据:</label>
+                <input type="text" id="safe-post" placeholder="data=1">
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h2>检测选项</h2>
+            <div class="form-group">
+                <label for="level">检测级别 (1-5):</label>
+                <input type="number" id="level" min="1" max="5" value="1">
+            </div>
+            <div class="form-group">
+                <label for="risk">风险程度 (1-3):</label>
+                <input type="number" id="risk" min="1" max="3" value="1">
+            </div>
+            <div class="form-group">
+                <label for="verbosity">详细程度 (0-6):</label>
+                <input type="number" id="verbosity" min="0" max="6" value="1">
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>注入技术</h2>
+            <div class="checkbox-group">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="tech-b" checked>
+                    <label for="tech-b">布尔注入 (B)</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="tech-e" checked>
+                    <label for="tech-e">报错注入 (E)</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="tech-u" checked>
+                    <label for="tech-u">联合注入 (U)</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="tech-s" checked>
+                    <label for="tech-s">堆叠注入 (S)</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="tech-t" checked>
+                    <label for="tech-t">延时注入 (T)</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="tech-q" checked>
+                    <label for="tech-q">内联注入 (Q)</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h2>枚举</h2>
+            <div class="checkbox-group">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="all">
+                    <label for="all">全部 (--all)</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="banner">
+                    <label for="banner">数据库信息</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="current-user">
+                    <label for="current-user">当前用户</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="current-db">
+                    <label for="current-db">当前数据库</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="passwords">
+                    <label for="passwords">密码</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="dbs">
+                    <label for="dbs">数据库</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="tables">
+                    <label for="tables">表</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="columns">
+                    <label for="columns">列</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="schema">
+                    <label for="schema">模式信息</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="dump">
+                    <label for="dump">下载数据</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>高级选项</h2>
+            <div class="checkbox-group">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="os-shell">
+                    <label for="os-shell">系统shell</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="os-pwn">
+                    <label for="os-pwn">获取系统权限</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="batch" checked>
+                    <label for="batch">选择默认Y</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="flush-session">
+                    <label for="flush-session">重置之前数据</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="keep-alive">
+                    <label for="keep-alive">使用持久HTTP连接</label>
+                </div>
+                <div class="form-group">
+                    <label for="threads">线程数:</label>
+                    <input type="number" id="threads" min="1" value="1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h2>文件系统访问</h2>
+            <div class="form-group">
+                <label for="file-read">读取文件:</label>
+                <input type="text" id="file-read" placeholder="path/to/file.txt">
+            </div>
+            <div class="form-group">
+                <label for="file-write">写入文件:</label>
+                <input type="text" id="file-write" placeholder="path/to/destination.txt">
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>操作系统访问</h2>
+            <div class="form-group">
+                <label for="os-cmd">执行操作系统命令:</label>
+                <input type="text" id="os-cmd" placeholder="ls -la">
+            </div>
+        </div>
+    </div>
+
+    <button onclick="generateCommand()">生成命令</button>
+
+    <div class="card">
+        <h2>生成的命令</h2>
+        <div id="output"></div>
+        <button class="copy-btn" onclick="copyCommand()">复制命令</button>
+    </div>
+
+    <footer class="footer">
+        <p>SQLmap 生成器 by Albert C 2024</p>
+    </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
