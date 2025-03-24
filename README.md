@@ -9,14 +9,9 @@
 3. 添加了汉化标识和版本信息
 4. 提供了中文README文件
 
-## 汉化文件
+## 测试截图
 
-主要汉化的文件包括：
-
-1. `lib/core/settings.py` - 修改了程序描述和横幅
-2. `lib/core/common.py` - 汉化了常见错误信息
-3. `sqlmap.py` - 汉化了主程序中的错误提示
-4. 新增了 `README-zh-CN-PINGS.md` 中文说明文件
+![1742858021519](https://github.com/user-attachments/assets/e7f96942-5914-4f3e-b263-cc239d076482)
 
 ## 注意事项
 
@@ -33,6 +28,7 @@
 
 与原版sqlmap使用方法相同：
 
+
 ```
 python sqlmap.py -h    # 显示基本帮助
 python sqlmap.py -hh   # 显示完整帮助
@@ -45,10 +41,6 @@ python sqlmap.py -hh   # 显示完整帮助
 ## 联系方式
 
 如有问题或建议，请直接联系原始sqlmap团队或提交issue至官方仓库：https://github.com/sqlmapproject/sqlmap/issues 
-
-免责声明
-----
-由于传播、利用此文所提供的信息而造成的任何直接或者间接的后果及损失，均由使用者本人负责，作者不为此承担任何责任。
 
 
 [![Star History Chart](https://api.star-history.com/svg?repos=BugFor-Pings/CN_Sqlmap&type=Date)](https://star-history.com/#BugFor-Pings/CN_Sqlmap&Date)
