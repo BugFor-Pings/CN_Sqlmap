@@ -9,6 +9,7 @@
 <a href="https://github.com/BugFor-Pings/CN_Sqlmap/issues"><img src="https://img.shields.io/github/issues-raw/BugFor-Pings/CN_Sqlmap?label=%E9%97%AE%E9%A2%98%E5%8F%8D%E9%A6%88&style=square"></a>
 <a href="https://github.com/BugFor-Pings/CN_Sqlmap/discussions"><img src="https://img.shields.io/github/stars/BugFor-Pings/CN_Sqlmap?label=%E7%82%B9%E8%B5%9E%E6%98%9F%E6%98%9F&style=square"></a>
 </p>
+
 ## 汉化内容
 
 本汉化版基于sqlmap 1.9版本，主要对以下内容进行了汉化：
