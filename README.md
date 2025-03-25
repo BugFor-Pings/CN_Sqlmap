@@ -10,6 +10,10 @@
 <a href="https://github.com/BugFor-Pings/CN_Sqlmap/discussions"><img src="https://img.shields.io/github/stars/BugFor-Pings/CN_Sqlmap?label=%E7%82%B9%E8%B5%9E%E6%98%9F%E6%98%9F&style=square"></a>
 </p>
 
+## 前言
+
+由于之前发布的sqlmap1.7版本的汉化版收到很多反馈觉得使用起来效果不错，但是发现sqlmap1.7版本的不支持最新版的python版本了，然后发现官方的sqlmap 1.9新版本修复了很多bug问题等，所以就直接汉化了一份最新版本的sqlmap出来。
+
 ## 汉化内容
 
 本汉化版基于sqlmap 1.9版本，主要对以下内容进行了汉化：
@@ -17,7 +21,7 @@
 1. 主要错误信息和提示消息
 2. 程序横幅和描述
 3. 添加了汉化标识和版本信息
-4. 提供了中文README文件
+
 
 ## 测试截图
 
