@@ -1,5 +1,14 @@
-# sqlmap 1.9 汉化版说明
+<p align="center">
+  <h1 align="center">sqlmap 1.9 汉化版说明</h1>
+</p>
 
+<p align="center">
+<a href="https://www.hackersafe.cn/" target='_blank'><img src="https://img.shields.io/badge/%E5%AE%98%E6%96%B9%E7%BD%91%E7%AB%99-%E7%82%B9%E5%87%BB%E6%89%93%E5%BC%80style=square"></a>
+<a href="https://github.com/BugFor-Pings/CN_sqlmap/releases/"><img src="https://img.shields.io/github/release/BugFor-Pings/CN_Sqlmap?label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC&style=square"></a>
+<a href="https://github.com/BugFor-Pings/CN_Sqlmap/releases"><img src="https://img.shields.io/github/downloads/BugFor-Pings/CN_Sqlmap/total?label=%E4%B8%8B%E8%BD%BD%E6%AC%A1%E6%95%B0&style=square"></a>
+<a href="https://github.com/BugFor-Pings/CN_Sqlmap/issues"><img src="https://img.shields.io/github/issues-raw/BugFor-Pings/CN_Sqlmap?label=%E9%97%AE%E9%A2%98%E5%8F%8D%E9%A6%88&style=square"></a>
+<a href="https://github.com/BugFor-Pings/CN_Sqlmap/discussions"><img src="https://img.shields.io/github/stars/BugFor-Pings/CN_Sqlmap?label=%E7%82%B9%E8%B5%9E%E6%98%9F%E6%98%9F&style=square"></a>
+</p>
 ## 汉化内容
 
 本汉化版基于sqlmap 1.9版本，主要对以下内容进行了汉化：
